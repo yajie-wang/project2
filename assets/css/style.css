@@ -1,0 +1,200 @@
+* {
+    font-family: helvetica;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: black;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*
+div{
+	background:rgba(200, 200, 200, .5);
+}
+*/
+
+
+/*hero*/
+
+#hero {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    height: calc(100vh - 57px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background: #3D52D5;
+    color: aliceblue;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.btn:hover {
+    background: #433191;
+    color: #C5BAF5;
+}
+
+#hero div {
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    max-width: 2400px;
+    border-radius: 10px;
+}
+
+#hero h1,
+#hero p {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+
+/*nav*/
+
+header {
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+#logo {
+    padding: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#mobilenav {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    top: 17px;
+    right: 0px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+nav a:hover {
+    border: 1px solid #000;
+    color: #000;
+}
+
+
+/*columns*/
+
+.container,
+header {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding: 10px;
+}
+
+.c75 {
+    width: 75%;
+}
+
+.c50 {
+    width: 50%;
+}
+
+.c25 {
+    width: 25%;
+}
+
+
+/*brand*/
+
+.hero {
+    background: #ccc;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:950px) {
+    h2 {
+        color: #333;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .col {
+        float: none;
+        padding: 10px;
+    }
+    .c50,
+    .c25 {
+        width: 100%;
+    }
+    h2 {
+        color: skyblue;
+    }
+    nav {
+        display: none;
+        position: static;
+        background: #ddd;
+    }
+    nav li {
+        display: block;
+    }
+    nav a {
+        width: 100%;
+        display: block;
+        border: none;
+        border-top: 1px solid #000;
+        color: #000;
+    }
+    #mobilenav {
+        display: block;
+        position: absolute;
+        top: 17px;
+        right: 10px;
+    }
+    #mobilenav a {
+        text-decoration: none;
+        color: #f00;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
