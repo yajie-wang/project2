@@ -5,10 +5,13 @@
     padding: 0;
 }
 
-h2 {
+#center {
+    padding: 50px;
+}
+
+#center h1 {
     color: black;
-    font-size: 50px;
-    font-weight: normal;
+    text-align: center;
 }
 
 img {
@@ -134,8 +137,17 @@ header {
     width: 75%;
 }
 
+.c60 {
+    width: 60%;
+}
+
+
 .c50 {
     width: 50%;
+}
+
+.c40 {
+    width: 40%;
 }
 
 .c25 {
@@ -162,21 +174,29 @@ header {
         float: none;
         padding: 10px;
     }
+
+    .c75,
+    .c60,
     .c50,
+    .c40,
     .c25 {
         width: 100%;
     }
+
     h2 {
         color: skyblue;
     }
+
     nav {
         display: none;
         position: static;
         background: #ddd;
     }
+
     nav li {
         display: block;
     }
+
     nav a {
         width: 100%;
         display: block;
@@ -184,12 +204,14 @@ header {
         border-top: 1px solid #000;
         color: #000;
     }
+
     #mobilenav {
         display: block;
         position: absolute;
         top: 17px;
         right: 10px;
     }
+
     #mobilenav a {
         text-decoration: none;
         color: #f00;
